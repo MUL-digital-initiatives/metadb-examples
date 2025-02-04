@@ -19,13 +19,7 @@
             "name": "items_permanent_location_filter",
             "displayName": "Permanent location filter",
             "type": "text",
-            "required": false,
-            "controlled.options": [
-                "Main Library",
-                "Annex",
-                "Wedel Building"
-            ],
-            "controlled.allowOtherValues": true
+            "required": false
         },
         {
             "name": "items_temporary_location_filter",
