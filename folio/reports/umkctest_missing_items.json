@@ -8,12 +8,6 @@
             "displayName": "Permanent location filter",
             "type": "text",
             "required": false
-        },
-        {
-            "name": "library_filter",
-            "displayName": "Library permanent location filter",
-            "type": "text",
-            "required": false
         }
     ]
 }

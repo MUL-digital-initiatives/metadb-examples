@@ -7,10 +7,6 @@ DROP FUNCTION IF EXISTS missing_items;
 CREATE FUNCTION missing_items(
     /* Specify one of the following to filter by location */
     items_permanent_location_filter text DEFAULT '', -- 'Online', 'Annex', 'Main Library'
-    /* The following connect to the item's permanent location */
-    institution_filter text DEFAULT '', -- 'KÃ¸benhavns Universitet', 'Montoya College'
-    campus_filter text DEFAULT '', -- 'Main Campus', 'City Campus', 'Online'
-    library_filter text DEFAULT '' -- 'Datalogisk Institut', 'Adelaide Library'
 )
 RETURNS TABLE(
     item_location text,
