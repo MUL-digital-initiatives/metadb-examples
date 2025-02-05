@@ -5,8 +5,8 @@
 DROP FUNCTION IF EXISTS missing_items;
 
 CREATE FUNCTION missing_items(
-    /* Specify one of the following to filter by location */
-    items_permanent_location_filter text DEFAULT '', -- 'Online', 'Annex', 'Main Library'
+    /* Specify one of the following to filter by location
+    items_permanent_location_filter text DEFAULT '', -- 'Online', 'Annex', 'Main Library' */
 )
 RETURNS TABLE(
     item_location text,

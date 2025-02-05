@@ -1,13 +1,6 @@
 {
     "displayName": "Missing items (UMKC Test)",
     "description": "List of missing items. Test to add location parameter.",
-    "instructions": ["Enter a permanent location."],
-    "parameters": [
-        {
-            "name": "items_permanent_location_filter",
-            "displayName": "Permanent location filter",
-            "type": "text",
-            "required": false
-        }
-    ]
+    "instructions": ["Enter a permanent location (coming soon)."],
+    "parameters": []
 }
