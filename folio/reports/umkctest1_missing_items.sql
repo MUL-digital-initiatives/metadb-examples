@@ -29,7 +29,7 @@ SELECT loc.name AS item_location,
         LEFT JOIN folio_inventory.location__t AS loc ON item.effective_location_id::uuid = loc.id
         LEFT JOIN folio_inventory.holdings_record__t AS hld ON item.holdings_record_id::uuid = hld.id
         LEFT JOIN folio_inventory.instance__t AS inst ON hld.instance_id::uuid = inst.id
-    ORDER BY item_location, item_call_number
+    ORDER BY item_title, item_location, item_call_number
 $$
 LANGUAGE SQL
 STABLE
