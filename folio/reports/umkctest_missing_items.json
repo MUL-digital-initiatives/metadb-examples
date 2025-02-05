@@ -1,6 +1,19 @@
 {
-    "displayName": "Missing items",
-    "description": "List of missing items",
-    "instructions": [],
-    "parameters": []
+    "displayName": "Missing items (UMKC Test)",
+    "description": "List of missing items. Test to add location parameter.",
+    "instructions": ["Enter a permanent location or library."],
+    "parameters": [
+        {
+            "name": "items_permanent_location_filter",
+            "displayName": "Permanent location filter",
+            "type": "text",
+            "required": false
+        },
+        {
+            "name": "library_filter",
+            "displayName": "Library permanent location filter",
+            "type": "text",
+            "required": false
+        }
+    ]
 }
