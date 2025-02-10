@@ -1,6 +1,6 @@
 {
     "displayName": "UMKC Missing items",
-    "description": "List of missing items from the shelving location designated below. If left empty, the default location = UMKC Robot (MNL) .",
+    "description": "List of missing items from the shelving location designated below. If left empty, the default location is UMKC Robot MNL.",
     "instructions": ["Determine the UUID for the needed location."],
     "parameters": [
         {
