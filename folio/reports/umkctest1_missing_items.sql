@@ -16,7 +16,7 @@ AS $$
 WITH missing AS (
     SELECT jsonb_extract_path_text(jsonb, 'id')::uuid AS item_id
         FROM folio_inventory.item
-        WHERE jsonb_extract_path_text(jsonb, 'status', 'name') = 'Missing' AND jsonb_extract_path_text(jsonb, 'effectiveLocationId') = '4416c10e-174f-4a4a-87ca-b27a192c8b10'
+        WHERE jsonb_extract_path_text(jsonb, 'status', 'name') = 'Available' AND jsonb_extract_path_text(jsonb, 'permanentLocationId') = '04e89fe3-0739-49f2-9296-713e1e034ddd'
 )
 SELECT loc.name AS item_location,
        item.barcode AS item_barcode,
