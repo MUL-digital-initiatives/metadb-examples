@@ -4,7 +4,9 @@
 
 DROP FUNCTION IF EXISTS missing_items;
 
-CREATE FUNCTION missing_items()
+CREATE FUNCTION missing_items(
+    shelving_location text DEFAULT '04e89fe3-0739-49f2-9296-713e1e034ddd'
+)
 RETURNS TABLE(
     item_location text,
     item_barcode text,
@@ -16,7 +18,7 @@ AS $$
 WITH missing AS (
     SELECT jsonb_extract_path_text(jsonb, 'id')::uuid AS item_id
         FROM folio_inventory.item
-        WHERE jsonb_extract_path_text(jsonb, 'status', 'name') = 'Missing' AND jsonb_extract_path_text(jsonb, 'permanentLocationId') = '04e89fe3-0739-49f2-9296-713e1e034ddd'
+        WHERE jsonb_extract_path_text(jsonb, 'status', 'name') = 'Missing' AND jsonb_extract_path_text(jsonb, 'permanentLocationId') = shelving_location
 )
 SELECT loc.name AS item_location,
        item.barcode AS item_barcode,

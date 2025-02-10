@@ -1,6 +1,13 @@
 {
     "displayName": "UMKC Missing items",
     "description": "List of missing items from the UMKC Miller Nichols Library General Collection shelving location.",
-    "instructions": [],
-    "parameters": []
+    "instructions": ["Determine the UUID for the needed location."],
+    "parameters": [
+        {
+            "name": "shelving_location",
+            "displayName": "Enter shelving location UUID",
+            "type": "text",
+            "required": false
+        }
+    ]
 }
