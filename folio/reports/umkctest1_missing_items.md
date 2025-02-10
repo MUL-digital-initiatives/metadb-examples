@@ -1,1 +1,3 @@
-This is a UMKC test copy of the default Missing Items Report. The Missing Items report pulls a list of all items labeled missing with the intent that this listed be used in searching.  It outputs the items location, barcode, call number, enumeration, volume, and title.  
+This is a UMKC test copy. Working through adding parameters starting with a simple report. 
+
+Successfully added a shelving location parameter that applies UUID in the SQL query to limit items by permanent location. Unable to use name because name is not included in the queried table. 
